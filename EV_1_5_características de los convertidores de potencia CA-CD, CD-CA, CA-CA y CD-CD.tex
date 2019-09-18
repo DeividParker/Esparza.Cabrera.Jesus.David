@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+
+
+\usepackage[utf8]{inputenc}
+
+\title{\textbf{CARACTERÍSTICAS DE LOS CONVERTIDORES DE POTENCIA CA-CD, CD-CA, CA-CA y CD-CD}}
+
+\author{Esparza Cabrera Jesús David\\
+		17 de Septiembre del 2019\\}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section{Convertidores CA-CD}
+
+Un convertidor de corriente alterna a corriente directa parte de un rectificador de
+onda completa. Su carga puede ser puramente resistiva. La forma de onda de
+salida del rectificador. Al agregarle a este rectificador un
+capacitor en paralelo, el convertidor se comporta como un
+filtro ya que se produce un voltaje a la salida que es esencialmente continuo. 
+
+El convertidor CA-CD nos proporciona una señal de salida rectificada (casi
+constante) de valor V m , donde V m es igual al valor pico del voltaje de entrada.
+Este
+valor se puede considerar muy pequeño y de esta manera encontrar el valor del resistor y
+del capacitor para un valor de voltaje directo deseado.
+
+\section{Convertidores CD-CA}
+Los convertidores de corriente directa a corriente alterna son utilizados como
+drivers de motores y como fuentes de corriente alterna ininterrumpida y tienen como
+objetivo producir una señal de corriente alterna sinusoidal, cuya magnitud y frecuencia
+puedan ser controladas. Existen diversos tipos de convertidores inversores de los
+cuales el convertidor de una sola pierna y el convertidor en puente de media y onda
+completa.
+Estas topologías generan una señal de salida que oscila entre el valor constante +V d /2 y –
+V d /2 para medio puente y una sola pierna, y +V d y –V d para puente completo, figura 1.3. A
+pesar de que esta señal es cuadrada, posteriormente se filtra para obtener una señal
+senoidal.
+En las topologías antes mencionadas existe lo que se conoce como conmutación
+imperfecta, la cual es uno de los mayores contribuyentes a la pérdida de potencia en estos
+convertidores. Estos dispositivos de conmutación absorben potencia cuando sus
+interruptores se encienden o apagan, si la transición se produce cuando tanto el voltaje
+como la corriente son diferentes de cero. Si se aumenta la frecuencia de conmutación, estas
+transiciones suceden con mayor frecuencia y la pérdida de potencia media en los interruptores aumenta. En muchas ocasiones el uso de altas frecuencias es deseable por la
+reducción significativa en tamaño de muchos dispositivos [7].
+Para poder realizar conmutaciones de más altas frecuencias en los convertidores, las
+pérdidas anteriormente mencionadas se pueden minimizar si cada interruptor en el
+convertidor cambia su estado (de encendido a apagado o viceversa) cuando el voltaje a
+través de él y/o la corriente es cero durante el instante de conmutación.
+\section{Convertidores CA-CA}
+Los convertidores de CA a CA son más complicados que los convertidores de CA a CC porque la conversión de CA requiere un cambio de tensión, frecuencia y capacidades de bloqueo de tensión bipolar, lo cual generalmente requiere tipologías de dispositivos complejas. Los convertidores que tienen fundamentalmente las mismas frecuencias de entrada y salida se llaman “Controladores de CA” y la conversión es de tensión fija frecuencia fija a tensión variable frecuencia fija (como aplicaciones de atenuadores de luz y control de motores de CA monofásicos que son típicamente usados en los electrodomésticos). Los convertidores que convierten una tensión fija frecuencia fija a tensión variable frecuencia variable se les llama “cicloconvertidores”. Estos se utilizan en aplicaciones de alta potencia que accionan motores de inducción y síncronos, generalmente controlados por fase y tradicionalmente utilizan tiristores debido a su facilidad de conmutación de fase. Otra forma de lograr la conversión CA/CA es utilizando CA/CC y CC/CA a través de un enlace CC intermedio.
+\section{Convertidores CD-CD}
+En muchas aplicaciones industriales, es necesario el convertir una fuente de
+poder de corriente directa (CD) de voltaje fijo a una fuente de CD de voltaje variable. Un
+convertidor de CD, convierte directamente de CD a CD. Este convertidor se puede considerar
+como el equivalente a un transformador de corriente alterna (CA) con una relación de vueltas
+que varía en forma continua. Al igual que un transformador, puede utilizarse como una fuente
+de CD reductora o elevadora de voltaje [1].
+Los convertidores CD-CD se utilizan ampliamente en el control de los motores de tracción de
+automóviles eléctricos, tranvías eléctricos, grúas marinas, montacargas y elevadores de minas.
+En lo que a nosotros nos concierne el convertidor CD-CD se utilizará en la primera etapa del
+balastro para la corrección del factor de potencia y obtener una salida en CD estable para
+alimentar el inversor resonante el cual trabajará en alta frecuencia. En este capítulo se
+analizarán 3 topologías de convertidores CD-CD las cuales son: Topología Elevadora,
+Reductora-elevadora y Flyback.
+
+
+
+
+\end{document}
