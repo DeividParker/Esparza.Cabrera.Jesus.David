@@ -1,0 +1,9 @@
+* source PRACTICA 1-5
+D_D1         N14673 N14735 Dbreak 
+D_D2         N14673 $D_LO Dbreak 
+D_D3         $D_LO N14706 Dbreak 
+D_D4         N14735 N14706 Dbreak 
+C_Cf         N14706 N14673 1mF
+R_Rcarga         N14673 N14706  10 TC=0,0 
+R_R2         N14673 0  10meg TC=0,0 
+L_Lr         $D_HI N14735  1mH  
